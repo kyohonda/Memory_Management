@@ -11,7 +11,7 @@ int recursive_function(int n) {
         return 0;
     }
     int local_variable_recursive = n;
-    printf("Stack address of local_variable_function: %p\n", &local_variable_recursive);
+    printf("Stack address of local_variable_recursive: %p\n", &local_variable_recursive);
     return n+recursive_function(n - 1);
 }
 
