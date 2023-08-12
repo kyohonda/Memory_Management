@@ -25,6 +25,10 @@ int main() {
     int* heap_variable2 = (int*)malloc(sizeof(int));
     int* heap_variable3 = (int*)malloc(sizeof(int));
 
+    printf("Data address of global1: %p\n", &global1);
+    printf("Data address of global2: %p\n", &global2);
+    printf("Data address of global3: %p\n", &global3);
+
     printf("Stack address of local_variable_main1: %p\n", &local_variable_main1);
     printf("Stack address of local_variable_main2: %p\n", &local_variable_main2);
     printf("Stack address of local_variable_main3: %p\n", &local_variable_main3);
@@ -32,6 +36,7 @@ int main() {
     printf("Heap address of heap_variable1: %p\n", heap_variable1);
     printf("Heap address of heap_variable2: %p\n", heap_variable2);
     printf("Heap address of heap_variable3: %p\n", heap_variable3);
+
 
     int result = recursive_function(5);
     //printf("Result: %d\n", result);
