@@ -39,7 +39,8 @@ int main() {
 
 
     int result = recursive_function(5);
-    //printf("Result: %d\n", result);
+    // stack overflow
+    //int result = recursive_function(200000);
 
     free(heap_variable1);
     free(heap_variable2);
