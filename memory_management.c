@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// global variables
-int global1 = 10;
-int global2 = 20;
-int global3 = 30;
+// 3 global variables
+int global1 = 1;
+int global2 = 2;
+int global3 = 3;
 
 int recursive_function(int n) {
     if (n <= 0) {
         return 0;
     }
-    int local_variable_function = n;
-    printf("Stack address of local_variable_function: %p\n", &local_variable_function);
+    int local_variable_recursive = n;
+    printf("Stack address of local_variable_function: %p\n", &local_variable_recursive);
     return n+recursive_function(n - 1);
 }
 
 int main() {
     // 3 local variables in main
-    int local_variable_main1 = 100;
-    int local_variable_main2 = 200;
+    int local_variable_main1 = 11;
+    int local_variable_main2 = 22;
+    int local_variable_main3 = 33;
     // 3 heap variables in main
     int* heap_variable1 = (int*)malloc(sizeof(int));
     int* heap_variable2 = (int*)malloc(sizeof(int));
@@ -26,6 +27,7 @@ int main() {
 
     printf("Stack address of local_variable_main1: %p\n", &local_variable_main1);
     printf("Stack address of local_variable_main2: %p\n", &local_variable_main2);
+    printf("Stack address of local_variable_main3: %p\n", &local_variable_main3);
 
     printf("Heap address of heap_variable1: %p\n", heap_variable1);
     printf("Heap address of heap_variable2: %p\n", heap_variable2);
