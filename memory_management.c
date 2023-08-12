@@ -34,7 +34,7 @@ int main() {
     printf("Heap address of heap_variable3: %p\n", heap_variable3);
 
     int result = recursive_function(5);
-    printf("Result: %d\n", result);
+    //printf("Result: %d\n", result);
 
     free(heap_variable1);
     free(heap_variable2);
