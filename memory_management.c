@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // 3 global variables
-int global1 = 1;
+int global1 ;
 int global2 = 2;
 int global3 = 3;
 
